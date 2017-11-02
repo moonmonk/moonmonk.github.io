@@ -1,0 +1,43 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 557db03..5a8eb5f 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -1 +1,37 @@[m
+[31m-Hello World[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m  <meta charset="UTF-8">[m
+[32m+[m[32m  <title>test</title>[m
+[32m+[m[32m  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <style>[m
+[32m+[m[32m        .panel {[m
+[32m+[m[32m            background: grey;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    </style>[m
+[32m+[m[32m        <div class="panels">[m
+[32m+[m[32m                <div class="panel panel1">[m
+[32m+[m[32m                  <p>Earth</p>[m
+[32m+[m[32m                  <p>Understand Deeply - Seek the Essential - See what's there - See what's missing</p>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="panel panel2">[m
+[32m+[m[32m                  <p>Fire</p>[m[41m   [m
+[32m+[m[32m                  <p>Welcome Mistakes - Let Errors be your guide - Finding the right question to the wrong answer - Failing by intent</p>[m[41m   [m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="panel panel3">[m
+[32m+[m[32m                  <p>Air</p>[m
+[32m+[m[32m                  <p>How Answers can lead to questions - Creating questions enlivens your curiosity - What's the real question?</p>[m[41m      [m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="panel panel4">[m
+[32m+[m[32m                  <p>Water</p>[m
+[32m+[m[32m                  <p>Seeing the flow of ideas; Look back, look forward</p>[m[41m      [m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="panel panel5">[m
+[32m+[m[32m                  <p>Change</p>[m
+[32m+[m[32m                  <p>Taking action - Embracing Change - Transform your thinking habits</p>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
