@@ -19,30 +19,27 @@ a {
 
 .sidebar {
   grid-area: sb;
-  background: darkred;
+  background: rgb(138, 66, 61);
   height: 100vh;
   grid-column: 1/2;
-  border: 5px solid;
   display: grid;
   grid-template-rows: auto;
   justify-content: center;
   align-content: space-around;
-  grid-gap: 5px;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.301) inset;
 }
 
 .sidebar a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.671);
   text-align: center;
+  font-size: 28px;
+  font-weight: bold;
 }
-.sidebar a:hover {
-  color: white;
-  transform: scale(1.1);
-}
+
 .content {
-  background: gray;
+  background: rgb(199, 192, 182);
   grid-area: c;
-  border: 5px solid;
 }
 
 .content > * {
@@ -53,7 +50,6 @@ a {
 .content p {
   text-align: center;
   padding: 50px;
-  border: 5px solid red;
 }
 
 @media (max-width: 700px) {
@@ -61,6 +57,10 @@ a {
     grid-template-areas:
       "sb sb"
       "c c";
+  }
+
+  .content {
+    height: 95vh;
   }
 
   .sidebar {
@@ -75,4 +75,31 @@ a {
     font-size: 16px;
     justify-content: center;
   }
+}
+
+/* Animations */
+
+a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: rgb(0, 0, 0);
+  height: 1px;
+  transition: 0.1s;
+}
+
+.sidebar a:hover {
+  color: black;
+  transform: scale(1.1);
+  animation: fill 1s forwards;
+  transition: 0.2s;
+}
+
+a:hover:after {
+  width: 100%;
 }
