@@ -11,7 +11,7 @@ body {
     "sb c"
     "sb c";
 }
-p,
+
 a {
   font-family: "Space Mono", monospace;
   font-size: 20px;
@@ -20,13 +20,13 @@ a {
 .sidebar {
   grid-area: sb;
   background: rgb(138, 66, 61);
-  height: 100vh;
   grid-column: 1/2;
   display: grid;
   grid-template-rows: auto;
   justify-content: center;
   align-content: space-around;
   box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.301) inset;
+  min-height: 100vh;
 }
 
 .sidebar a {
@@ -40,6 +40,11 @@ a {
 .content {
   background: rgb(199, 192, 182);
   grid-area: c;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  justify-items: center;
+  align-content: center;
+  */
 }
 
 .content > * {
@@ -102,4 +107,10 @@ a:after {
 
 a:hover:after {
   width: 100%;
+}
+
+/* Projects page*/
+
+.project-item {
+  justify-self: center;
 }
