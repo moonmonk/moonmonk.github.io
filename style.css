@@ -1,0 +1,132 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+h2 {
+  padding: 10px;
+}
+
+.content > div {
+  justify-content: center;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero-img {
+  filter: saturate(70%) contrast(120%) brightness(90%);
+  height: 100%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ce/City-of-the-future.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  bottom: 0;
+}
+
+/* Hover animation. Bugged in Chrome
+        .hero:hover .hero-img {
+            filter: blur(0px) grayscale(0%) contrast(120%);
+            transition: .5s;
+            transform: translate(0px, 0);
+        }
+*/
+
+.hero-text {
+  background: rgba(155, 155, 155, 0.8);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.about {
+  min-height: 50vh;
+  color: white;
+  background: #273e49;
+}
+
+li {
+  list-style: square;
+}
+/* Experience Section */
+.experience {
+  min-height: 40vh;
+  background: #273136;
+  padding: 50px 0;
+}
+
+h1 {
+  color: whitesmoke;
+  margin: 5px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+.skills > div {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.082);
+}
+
+.skills * h2 {
+  color: white;
+}
+.skills * li {
+  text-align: left;
+  margin: auto;
+  padding: 5px 15px;
+  color: white;
+}
+.projects {
+  min-height: 50vh;
+  background: #666666;
+}
+
+.contact {
+  min-height: 20vh;
+  background: #333333;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333333;
+  border-bottom: black outset;
+  z-index: 2;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
