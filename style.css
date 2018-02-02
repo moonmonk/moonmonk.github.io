@@ -4,11 +4,41 @@ html {
   margin: 0;
   height: 100%;
 }
-
-h2 {
-  padding: 10px;
+h1,
+h2,
+p,
+a,
+li {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 5px;
 }
 
+hr {
+  width: 75%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+h1 {
+  color: black;
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+}
+li {
+  list-style: square;
+  font-family: monospace;
+  font-size: 18px;
+}
 .content > div {
   justify-content: center;
   vertical-align: top;
@@ -17,19 +47,28 @@ h2 {
   text-align: center;
 }
 
+i {
+  color: rgb(113, 123, 177);
+  padding: 20px;
+}
+
+i:hover {
+  color: #475964;
+}
 .hero {
   height: 100vh;
 }
 
 .hero-img {
-  filter: saturate(70%) contrast(120%) brightness(90%);
+  filter: saturate(70%) contrast(120%) brightness(90%) blur(10px);
   height: 100%;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ce/City-of-the-future.jpg");
+  background-image: url("https://c.pxhere.com/photos/1a/b3/architecture_buildings_cars_city_cityscape_downtown_pedestrian_crossing_people-919877.jpg!d");
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: -1;
   bottom: 0;
+  transform: scale(1.05);
 }
 
 /* Hover animation. Bugged in Chrome
@@ -50,56 +89,87 @@ h2 {
   transform: translate(-50%, -50%);
   border-radius: 15px;
   padding: 50px;
+  max-width: 400px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.171);
 }
 
 .about {
   min-height: 50vh;
-  color: white;
-  background: #273e49;
+  background: #665e5e;
 }
 
-li {
-  list-style: square;
+.about * li {
+  list-style: none;
+}
+
+#alex {
+  width: auto;
+  border-radius: 100px;
+  height: 200px;
+  margin: 20px;
+  border: 5px solid #423235;
+}
+
+img {
 }
 /* Experience Section */
 .experience {
   min-height: 40vh;
-  background: #273136;
-  padding: 50px 0;
-}
-
-h1 {
-  color: whitesmoke;
-  margin: 5px;
+  background: #8d867f;
 }
 
 .skills {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .skills > div {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.281);
   border-radius: 15px;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.082);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.171);
+  min-width: 600px;
+  margin: 20px;
 }
 
-.skills * h2 {
-  color: white;
-}
 .skills * li {
   text-align: left;
   margin: auto;
   padding: 5px 15px;
-  color: white;
 }
 .projects {
   min-height: 50vh;
-  background: #666666;
+  background: #475964;
 }
 
+.maps {
+  background: rgba(255, 255, 255, 0.281);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 5%;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.171);
+}
+
+.models {
+  background: rgba(255, 255, 255, 0.281);
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.171);
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.work * li,
+.education * li {
+  text-align: center;
+  list-style: none;
+}
 .contact {
   min-height: 20vh;
-  background: #333333;
+  background: #666666;
 }
 
 div {
@@ -112,7 +182,7 @@ div {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #333333;
+  background: #04406d;
   border-bottom: black outset;
   z-index: 2;
 }
@@ -129,4 +199,9 @@ div {
 .navbar a:hover {
   background: #ddd;
   color: black;
+}
+
+iframe {
+  height: 350px;
+  width: 500px;
 }
