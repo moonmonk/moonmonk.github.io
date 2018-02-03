@@ -4,6 +4,7 @@ html {
   margin: 0;
   height: 100%;
 }
+
 h1,
 h2,
 p,
@@ -24,6 +25,7 @@ hr {
     rgba(0, 0, 0, 0)
   );
 }
+
 h1 {
   color: black;
   margin: 5px;
@@ -61,7 +63,7 @@ i:hover {
 }
 
 .hero-img {
-  filter: saturate(70%) contrast(120%) brightness(90%) blur(10px);
+  filter: saturate(70%) contrast(120%) brightness(90%) blur(0px);
   height: 100%;
   background-image: url("https://c.pxhere.com/photos/1a/b3/architecture_buildings_cars_city_cityscape_downtown_pedestrian_crossing_people-919877.jpg!d");
   background-position: center;
@@ -69,7 +71,6 @@ i:hover {
   position: relative;
   z-index: -1;
   bottom: 0;
-  transform: scale(1.05);
 }
 
 /* Hover animation. Bugged in Chrome
@@ -90,7 +91,7 @@ i:hover {
   transform: translate(-50%, -50%);
   border-radius: 15px;
   padding: 50px;
-  max-width: 400px;
+  max-width: 500px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.171);
 }
 
@@ -108,7 +109,7 @@ i:hover {
   border-radius: 100px;
   height: 200px;
   margin: 20px;
-  border: 5px solid #423235;
+  border: 5px solid#23455f;
 }
 
 img {
@@ -148,6 +149,11 @@ img {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+@media (max-width: 1300px) {
+  .maps {
+    justify-content: center;
+  }
 }
 
 .holder {
