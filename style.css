@@ -116,8 +116,6 @@ i:hover {
   border: 5px solid#23455f;
 }
 
-img {
-}
 /* Experience Section */
 .experience {
   min-height: 40vh;
@@ -151,6 +149,13 @@ img {
   background: #475964;
 }
 
+.projects a {
+  background: rgba(255, 255, 255, 0.281);
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.171);
+  padding: 15px;
+  margin: 5px;
+}
 .maps,
 .models {
   padding: 20px;
