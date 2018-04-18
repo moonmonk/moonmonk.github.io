@@ -10,9 +10,14 @@ h2,
 p,
 a,
 li {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 5px;
   font-weight: bolder;
+}
+
+a {
+  color: #0a2b44;
+  font-size: 16px; 
 }
 
 hr {
@@ -29,8 +34,7 @@ hr {
 
 h1 {
   color: black;
-  margin: 5px;
-  padding: 10px;
+  margin: 25px;
   font-size: 30px;
 }
 
@@ -52,12 +56,12 @@ li {
 }
 
 i {
-  color: rgb(113, 123, 177);
+  color: #04406d;
   padding: 20px;
 }
 
 i:hover {
-  color: #475964;
+  color: #8A8A8A;
 }
 .hero {
   height: 100vh;
@@ -66,7 +70,7 @@ i:hover {
 .hero-img {
   filter: saturate(70%) contrast(120%) brightness(90%) blur(0px);
   height: 100%;
-  background-image: url("https://c.pxhere.com/photos/1a/b3/architecture_buildings_cars_city_cityscape_downtown_pedestrian_crossing_people-919877.jpg!d");
+  background-image: url("city.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -101,7 +105,7 @@ i:hover {
 }
 .about {
   min-height: 50vh;
-  background: #665e5e;
+  background: #8A8A8A;
 }
 
 .about * li {
@@ -110,16 +114,16 @@ i:hover {
 
 #alex {
   width: auto;
-  border-radius: 100px;
+  border-radius: 50%;
   height: 200px;
   margin: 20px;
-  border: 5px solid#23455f;
+  border: 5px solid#4F697D;
 }
 
 /* Experience Section */
 .experience {
   min-height: 40vh;
-  background: #8d867f;
+  background: #8A8A8A;
 }
 
 .skills {
@@ -146,7 +150,7 @@ i:hover {
 }
 .projects {
   min-height: 50vh;
-  background: #475964;
+  background: #4f697d;
 }
 
 .projects a {
@@ -183,7 +187,7 @@ i:hover {
 
 .contact {
   min-height: 20vh;
-  background: #666666;
+  background: #4F697D;
 }
 
 div {
@@ -218,4 +222,5 @@ div {
 iframe {
   height: 350px;
   width: 500px;
+  margin: 5px;
 }
