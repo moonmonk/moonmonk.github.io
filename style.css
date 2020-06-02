@@ -11,7 +11,7 @@ p,
 a,
 li {
   font-family: "Lato", sans-serif;
-  padding: 5px;
+  /* padding: 5px; */
   font-weight: bolder;
 }
 
@@ -71,7 +71,7 @@ i:hover {
 .hero-img {
   filter: saturate(30%) contrast(120%) brightness(80%) blur(0px);
   height: 100%;
-  background-image: url("hills.jpeg");
+  background-image: url("images/hills.jpeg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -136,14 +136,19 @@ i:hover {
 
 .projects a {
   border-radius: 15px;
-  padding: 15px;
-  margin: 5px;
+
+}
+
+.thumbnail {
+  width: 200px;
 }
 
 .wrapper {
   background: rgba(255, 255, 255, 0.281);
   margin: 20px 200px;
   padding: 3px;
+  border-radius:5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.281);
 }
 
 .flex-container {
