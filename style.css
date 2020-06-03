@@ -18,6 +18,17 @@ li {
 a {
   color: #0a2b44;
   font-size: 16px; 
+  transition: all .2s ease-in-out;
+}
+.grow { 
+  transition: all .2s ease-in-out; 
+  border-radius:5px;
+  margin: 10px 0 10px 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.281);
+}
+.grow:hover { 
+  transform: scale(1.1); 
+
 }
 
 hr {
@@ -57,19 +68,19 @@ li {
 }
 
 i {
-  color: #04406d;
+  color: #b3cde2;
   padding: 20px;
 }
 
 i:hover {
-  color: #8A8A8A;
+  color: white;
 }
 .hero {
   height: 100vh;
 }
 
 .hero-img {
-  filter: saturate(30%) contrast(120%) brightness(80%) blur(0px);
+  filter: saturate(60%) contrast(120%) brightness(80%) blur(0px);
   height: 100%;
   background-image: url("images/hills.jpeg");
   background-position: center;
@@ -96,7 +107,7 @@ i:hover {
 }
 .about {
   min-height: 50vh;
-  background: #8A8A8A;
+  background: #b3cde2;
 }
 
 #alex {
@@ -110,7 +121,7 @@ i:hover {
 /* Experience Section */
 .experience {
   min-height: 40vh;
-  background: #8A8A8A;
+  background: #b3cde2;
 }
 
 .skills {
@@ -131,12 +142,7 @@ i:hover {
 
 .projects {
   min-height: 50vh;
-  background: #4f697d;
-}
-
-.projects a {
-  border-radius: 15px;
-
+  background: rgb(200, 198, 198);
 }
 
 .thumbnail {
@@ -180,7 +186,7 @@ i:hover {
 
 .contact {
   min-height: 20vh;
-  background: #4F697D;
+  background: #04406d;
 }
 
 div {
